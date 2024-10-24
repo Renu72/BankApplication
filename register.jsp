@@ -80,6 +80,11 @@ margin-left:425px;
   width: 100%;
   gap: 6px;
 }
+.column {
+  display: flex;
+  width: 100%;
+  gap: 6px;
+}
 
 .form label {
   position: relative;
@@ -93,9 +98,10 @@ margin-left:425px;
   outline: 0;
   border: 2px solid rgba(105, 105, 105, 0.397);
   border-radius: 10px;
+  font-size: 0.9em
 }
 
-.form label .input + span {
+<%-------.form label .input + span {
   color: rgba(255, 255, 255, 0.5);
   position: absolute;
   left: 10px;
@@ -103,9 +109,9 @@ margin-left:425px;
   font-size: 0.9em;
   cursor: text;
   transition: 0.3s ease;
-}
+}----%>
 
-.form label .input:placeholder-shown + span {
+.form label .input:placeholder-shown {
   top: 12.5px;
   font-size: 0.9em;
 }
@@ -114,9 +120,20 @@ margin-left:425px;
 .form label .input:valid + span {
   color: skyblue;
   top: 0px;
-  font-size: 0.8em;
+  font-size: 0.6em;
   font-weight: 600;
 }
+.form .gender-box {
+  margin-top: 10px;
+}
+
+.form :where(.gender-option, .gender) {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+  flex-wrap: wrap;
+}
+
 
 .input {
   font-size: medium;
@@ -156,29 +173,52 @@ margin-left:425px;
     <p class="title">Register </p>
     <p class="message">Signup now and get full access to our app. </p>
         <div class="flex">
-        <label>
-            <input class="input" type="text" placeholder="" required="" name="Fname">
-            <span>Firstname</span>
+        <label>FirstName
+            <input class="input" type="text" placeholder="Enter FirstName" required="" name="Fname">
+            
         </label>
 
-        <label>
-            <input class="input" type="text" placeholder="" required="" name="Lname">
-            <span>Lastname</span>
+        <label>LastName
+            <input class="input" type="text" placeholder="Enter lastname" required="" name="Lname">
         </label>
-    </div>  
-            
-    <label>
-        <input class="input" type="email" placeholder="" required="" name="email">
-        <span>Email</span>
+    </div>    
+    <div class="column">
+    <label>PhoneNumber
+            <input class="input" type="telephone" placeholder="Enter phno" required="" name="phno">
+        </label>
+        <label>Enter DOB
+           <input class="input" type="date" placeholder="Enter DOB" required="" name="DOB">
+        </label>
+    </div>
+    <div class="gender-box">
+        <label>Gender</label>
+        <div class="gender-option">
+          <div class="gender">
+            <input name="gender" id="check-male" type="radio">
+            <label for="check-male">Male</label>
+          </div>
+          <div class="gender">
+            <input name="gender" id="check-female" type="radio">
+            <label for="check-female">Female</label>
+          </div>
+          <div class="gender">
+            <input name="gender" id="check-other" type="radio">
+            <label for="check-other">Prefer not to say</label>
+          </div>
+        </div>
+      </div>
+    <label>Address
+        <input class="input" type="address" placeholder="address" required="" name="address">
+    </label> 
+    <label>Email
+        <input class="input" type="email" placeholder="Enter email" required="" name="email">
     </label> 
         
-    <label>
-        <input class="input" type="password" placeholder="" required="" name="password">
-        <span>Password</span>
+    <label>Password
+        <input class="input" type="password" placeholder="enter password" required="" name="password">
     </label>
-    <label>
-        <input class="input" type="password" placeholder="" required="">
-        <span>Confirm password</span>
+    <label>Confirm Password
+        <input class="input" type="password" placeholder="confirm password" required="">
     </label>
     <button class="submit">Submit</button>
     <p class="signin">Already have an acount ? <a href="register">Sign in</a> </p>
