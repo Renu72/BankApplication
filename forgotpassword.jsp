@@ -17,8 +17,7 @@
             align-items: center;
             height: 100vh;
         }
-
-        .form-container {
+        form {
             background-color: #ffffff;
             padding: 40px;
             max-width: 400px;
@@ -27,46 +26,38 @@
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
             text-align: center;
         }
-
-        .logo-container h2 {
+        h2 {
             font-size: 24px;
             color: #212121;
             margin-bottom: 10px;
         }
-
-        .logo-container p {
+        p {
             color: #555;
             font-size: 14px;
             margin-bottom: 20px;
         }
-
-        .form-group {
-            margin-bottom: 20px;
-            text-align: left;
-        }
-
-        .form-group label {
+        label {
             font-size: 14px;
-            margin-bottom: 8px;
             display: block;
             color: #333;
+            margin-bottom: 8px;
+            text-align: left;
         }
-
-        .form-group input {
+        input[type="email"],
+        input[type="password"] {
             width: 100%;
             padding: 12px 16px;
             border-radius: 6px;
             border: 1px solid #ccc;
             font-size: 16px;
-            font-family: inherit;
+            margin-bottom: 20px;
         }
-
-        .form-group input:focus {
+        input[type="email"]:focus,
+        input[type="password"]:focus {
             outline: none;
             border-color: #4a90e2;
         }
-
-        .form-submit-btn {
+        button {
             background-color: #4a90e2;
             color: #fff;
             padding: 12px 0;
@@ -77,39 +68,28 @@
             cursor: pointer;
             transition: background-color 0.3s ease;
         }
-
-        .form-submit-btn:hover {
+        button:hover {
             background-color: #3b7ccc;
         }
     </style>
 </head>
 <body>
 
-    <div class="form-container">
-        <div class="logo-container">
-            <h2>Reset Your Password</h2>
-            <p>Enter your email and new password below.</p>
-        </div>
-
-        <form action="ForgotPasswordServlet" method="POST" class="form">
-            <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" placeholder="Enter your email" required>
-            </div>
-
-            <div class="form-group">
-                <label for="new_password">New Password:</label>
-                <input type="password" id="new_password" name="new_password" placeholder="Enter new password" required>
-            </div>
-
-            <div class="form-group">
-                <label for="confirm_password">Re-enter New Password:</label>
-                <input type="password" id="confirm_password" name="confirm_password" placeholder="Re-enter new password" required>
-            </div>
-
-            <button type="submit" class="form-submit-btn">Update Password</button>
-        </form>
-    </div>
+    <form action="ForgotPasswordServlet" method="POST">
+        <h2>Reset Your Password</h2>
+        <p>Enter your email and new password below.</p>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        
+        <label for="new_password">New Password:</label>
+        <input type="password" id="new_password" name="new_password" placeholder="Enter new password" required>
+        
+        <label for="confirm_password">Re-enter New Password:</label>
+        <input type="password" id="confirm_password" name="confirm_password" placeholder="Re-enter new password" required>
+        
+        <button type="submit">Update Password</button>
+    </form>
 
 </body>
 </html>
