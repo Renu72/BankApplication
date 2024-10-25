@@ -1,0 +1,111 @@
+body {
+    background-image: linear-gradient(75deg, skyblue, black);
+}
+
+#container {
+    margin-top: 30px;
+    margin-left: 350px;
+}
+
+.form-container {
+    width: 470px;
+    height: 500px;
+    background-color: #fff;
+    border: 1px solid grey;
+    border-radius: 20px;
+    box-sizing: border-box;
+    padding: 20px 30px;
+}
+
+.title {
+    text-align: center;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    margin: 10px 0 30px 0;
+    font-size: 28px;
+    font-weight: 800;
+}
+
+.form {
+    width: 94%;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin-bottom: 15px;
+}
+
+.form .input-box input,
+.form .select-box select {
+    height: 35px;
+    width: 100%;
+    font-size: 1rem;
+    color: #808080;
+    margin-top: 5px;
+    border: 1px solid grey;
+    border-radius: 18px;
+    padding: 0 15px;
+    background: white;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+   
+}
+
+.input-box input:focus {
+   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    
+}
+
+.select-box select {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    color: black;
+    font-size: 1rem;
+    background: white;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    
+}
+
+.input {
+    border-radius: 18px;
+    border: 1px solid grey;
+    padding: 11px 15px;
+    font-size: 1rem;
+     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.form-btn {
+    padding: 10px 15px;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    border-radius: 20px;
+    border: 0 !important;
+    background: teal;
+    color: white;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.form-btn:active {
+    box-shadow: none;
+}
+
+.sign-up-label {
+    margin-left: 80px;
+    font-size: 10px;
+    color: #747474;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.sign-up-link {
+    margin-left: 2px;
+    font-size: 11px;
+    text-decoration: underline;
+    color: teal;
+    cursor: pointer;
+    font-weight: 800;
+}
