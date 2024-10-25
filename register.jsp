@@ -6,6 +6,9 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 <style type="text/css">
+body{
+background-image: linear-gradient(75deg, skyblue,black);
+}
 #container{
 margin-top:25px;
 margin-left:425px;
@@ -101,15 +104,7 @@ margin-left:425px;
   font-size: 0.9em
 }
 
-<%-------.form label .input + span {
-  color: rgba(255, 255, 255, 0.5);
-  position: absolute;
-  left: 10px;
-  top: 0px;
-  font-size: 0.9em;
-  cursor: text;
-  transition: 0.3s ease;
-}----%>
+
 
 .form label .input:placeholder-shown {
   top: 12.5px;
