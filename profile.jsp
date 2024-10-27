@@ -456,7 +456,7 @@
         </div>
 
         <!-- Right side image placeholder -->
-            <img src="image.jpg">
+            <img src="image.png">
 
     </div>
     
