@@ -12,11 +12,11 @@
             box-sizing: border-box;
         }
         body {
-            background-color: black;
+            background-color: #F5F5F5; /* Light Gray */
         }
         /* Navbar styling */
         .navbar {
-            background-color: #58bc82;
+            background-color: #003366; /* Navy */
             padding: 1em 2em;
             display: flex;
             justify-content: flex-end;
@@ -28,8 +28,8 @@
             padding: 0.5em 1em;
             font-size: 1em;
             font-weight: bold;
-            color: #707070;
-            background-color: #efefef;
+            color: #003366; /* Navy */
+            background-color: #FFC300; /* Golden Yellow */
             border: none;
             border-radius: 5px;
             cursor: pointer;
@@ -37,8 +37,8 @@
         }
         /* Button hover effect */
         .navbar button:hover {
-            background-color: #707070;
-            color: #efefef;
+            background-color: #003366; /* Navy */
+            color: #FFC300; /* Golden Yellow */
         }
         /* Hamburger icon styling */
         .hamburger {
@@ -49,7 +49,7 @@
         .hamburger div {
             width: 25px;
             height: 3px;
-            background-color: #707070;
+            background-color: #FFC300; /* Golden Yellow */
             margin: 4px 0;
             transition: 0.4s;
         }
@@ -59,7 +59,7 @@
             position: absolute;
             right: 2em;
             top: 70px;
-            background-color: #efefef;
+            background-color: #F5F5F5; /* Light Gray */
             border-radius: 5px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             z-index: 1;
@@ -67,20 +67,20 @@
         .dropdown a {
             display: block;
             padding: 10px 15px;
-            color: #707070;
+            color: #003366; /* Navy */
             text-decoration: none;
             font-weight: bold;
         }
         .dropdown a:hover {
-            background-color: #707070;
-            color: #efefef;
+            background-color: #FFC300; /* Golden Yellow */
+            color: #003366; /* Navy */
         }
         /* Welcome message styling */
         .welcome-message {
             padding: 2em;
             text-align: center;
-            background-color: black;
-            color: #58bc82;
+            background-color: #003366; /* Navy */
+            color: #FFC300; /* Golden Yellow */
             font-size: 50px;
         }
         /* Left side introduction and features section */
@@ -90,14 +90,14 @@
             margin-left: 3%;
         }
         .intro h2 {
-            color: #58bc82;
+            color: #003366; /* Navy */
             font-size: 1.8em;
             margin-bottom: 0.5em;
             margin-left: 3%;
         }
         .intro p {
             font-size: 1em;
-            color: white;
+            color: #003366; /* Navy */
             line-height: 1.6em;
             margin-bottom: 1em;
             margin-left: 3%;
@@ -106,7 +106,7 @@
         .intro ul {
             margin-top: 1em;
             padding-left: 1.5em; /* Adds indentation for the list */
-            color: white;
+            color: #003366; /* Navy */
             margin-left: 3%;
         }
         .intro li {
@@ -119,11 +119,11 @@
         img {
             height: 300px;
             width: 450px;
-            background-color: #efefef;
+            background-color: #F5F5F5; /* Light Gray */
             display: flex;
             align-items: center;
             justify-content: center;
-            color: #707070;
+            color: #003366; /* Navy */
             font-size: 1.2em;
             border-radius: 10px;
             text-align: center;
@@ -134,15 +134,15 @@
         .support-section {
             padding: 1.5em;
             text-align: center;
-            background-color: #58bc82;
-            color: black;
+            background-color: #003366; /* Navy */
+            color: #FFC300; /* Golden Yellow */
             position: fixed;
             bottom: 0;
             width: 100%;
             font-size: 1em;
         }
         .support-section a {
-            color: black;
+            color: #FFC300; /* Golden Yellow */
             text-decoration: none;
             font-weight: bold;
         }
@@ -193,11 +193,12 @@
                 <li>Quick and Secure Money Transfers</li>
                 <li>Account Creation and Management</li>
                 <li>Personalized Banking Assistance</li>
+                <li>Bill Payments Made Easy</li>
             </ul>
         </div>
 
         <!-- Right side image placeholder -->
-        <img src="hands.jpg">
+        <img src="Images/bank-fotor-bg-remover-20241028102.png" alt="Banking Services">
 
     </div>
 
